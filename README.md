@@ -2,6 +2,13 @@
 
 本项目实现了基于 **光流估计** + **Kalman 滤波** 的实时视频防抖算法[^1]，能够在视频播放时同时显示**防抖前后对比**效果。核心算法来源于光流法计算相邻帧的平移、旋转、缩放参数，并通过 Kalman 滤波器进行平滑，最终生成防抖后的稳定视频序列。
 
+
+
+https://github.com/user-attachments/assets/68a1abb5-bcd4-4b24-86e4-cae4d0d11abb
+
+左边为抖动视频，右边为稳定视频
+
+
 ## Requirements
 
 - MATLAB R2022b or later
