@@ -2,7 +2,7 @@
 [![View Video-Stabilization on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/181778-video-stabilization)
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=cuixing158/Video-Stabilization&file=Example_videoStabilization.mlx)
 
-本项目实现了基于 **光流估计** + **Kalman 滤波** 的实时视频防抖算法[^1]，能够在视频播放时同时显示**防抖前后对比**效果。核心算法来源于光流法计算相邻帧的平移、旋转、缩放参数，并通过 Kalman 滤波器进行平滑，最终生成防抖后的稳定视频序列。
+本项目实现了基于 **光流估计** + **Kalman 滤波** 的实时视频防抖算法[^1]，能够在视频播放时同时显示**防抖前后对比**效果。核心算法来源于光流法计算相邻帧的平移、旋转、缩放参数，并通过 Kalman 滤波器进行平滑，最终生成防抖后的稳定视频序列。关于常规Kalman滤波算法原理理解可以参考我于2018年写的博客[^2],仅供类比参考。
 
 
 
@@ -69,3 +69,5 @@ end
 ## References
 
 [^1]: L. Kejriwal and I. Singh, "A Hybrid Filtering Approach of Digital Video Stabilization for UAV Using Kalman and Low Pass Filter," Procedia Computer Science, vol. 93, pp. 359-366, 2016, doi: 10.1016/j.procs.2016.07.221.
+
+[^2]: [基于卡尔曼滤波算法在三维球轨迹中跟踪应用](https://blog.csdn.net/cuixing001/article/details/84203398)
